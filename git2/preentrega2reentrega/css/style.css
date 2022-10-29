@@ -1,0 +1,85 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/**
+font-family: 'Montserrat', sans-serif;
+*/
+header{
+    background-color: lightslategray;
+    grid-area: header;
+}
+body{
+    background-color: grey;
+}
+.navBar li{
+    display: inline;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+}
+.navBar li a{
+    text-decoration: none;
+    color: white;
+}
+.seccion-portada {
+    background-image: url(../assets/img/casapropia.jpg);
+    background-repeat: no-repeat;
+    height: 100vh; 
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.section-portada__titulo{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 40px;
+    text-indent: 40px;
+    letter-spacing: 4px;
+    padding: 400px 200px 10px 0px ;
+}
+.carousel-inner img{
+    width: 865px;
+    height: 768px;
+    margin: auto;
+}
+.carousel-inner{
+    margin: auto;
+    height: 865px;
+    width: 768px;
+    }
+footer{
+    background-color: lightslategray;
+    grid-area: footer;
+}
+
+
+@media (max-width:768px){
+    .seccion-portada{
+        background-image: url(../assets/img/casapropia-tablet.jpg);
+    }
+    .section-portada__titulo{
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        font-size: 15px;
+        font-weight: bolder;
+        text-indent: 40px;
+        letter-spacing: 2px;
+        padding: 255px 200px 10px 0px ;
+}
+}
+@media (max-width:576px){
+    .seccion-portada{
+        background-image: url(../assets/img/casapropia-sm.jpg);
+    }
+    .section-portada__titulo{
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        font-size: 15px;
+        font-weight: bolder;
+        text-indent: 40px;
+        letter-spacing: 2px;
+        padding: 270px 30px 10px 0px ;
+}
+}
